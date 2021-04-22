@@ -1,0 +1,36 @@
+---
+title: 'Quiz: Confidence Intervals'
+subtitle: "STAT 343: Mathematical Statistics"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Problem 1
+
+Suppose that $X_1,...,X_{15}$ form a random sample from a normal distribution for which both the mean and the variance are unknown. Construct a lower confidence limit $A$ such that
+
+$$P[\mu < A]=0.99$$
+
+You should plug in numbers for the quantile(s) corresponding to the sampling distribution for your pivotal quantity to get full credit. You can use R and the included probability distribution reference that you pulled from Github with this quiz. 
+
+*Note: this is just a one-sided 99% confidence interval.*
+
+\newpage
+
+## Problem 2
+
+Suppose a classmate comes to you with the following interval and claims it is the answer to (a): 
+
+$$\left(-\infty,  \bar{X}+2.326\times \frac{s}{\sqrt{n}}\right]$$
+
+where $s=\sqrt{\frac{\sum_{i=1}^n(x_i-\bar{x})^2}{n-1}}$ and $z_{1-0.01}=z_{0.99}=2.326$ is the 0.99 quantile from a standard normal distribution. In other words $A = \bar{X}+2.326\times \frac{s}{\sqrt{n}}$.
+
+### (a) Explain to your classmate why your answers do not match. This answer should be brief - 1-3 sentences.
+
+\vspace{3cm}
+
+### (b) In the context of this sample, the one-sided confidence interval in Problem 1 would be more appropriate than that presented in Problem 2(a). Under what circumstances would you expect the two confidence intervals to be almost identical? Defend your answer and include any relevant results or theorems. This should be no more than 3 sentences.
+
